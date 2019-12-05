@@ -1,23 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
-
-ext {
-    bintrayRepo = 'LibSpin'
-    bintrayName = 'LibSpin'
-
-    // Maven metadata
-    publishedGroupId = 'com.yashdev.lib'
-    libraryName = 'LibSpin'
-    artifact = 'libspin'
-
-    libraryDescription = 'Easiest way to add Spin and Win on Android. LibSpin offers an Interactive Gamified Interface with lots of Customization options.'
-    libraryVersion = '1.0.0'
-
-    developerId = 'yashdev'
-    developerName = 'yash Dev'
-    developerEmail = 'yash@oxywebs.com'
-}
 
 android {
     compileSdkVersion 29
@@ -45,7 +26,3 @@ dependencies {
 
     implementation 'androidx.core:core:1.2.0-rc01'
 }
-
-
-apply from: 'https://raw.githubusercontent.com/yashodharSepuri/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/yashodharSepuri/JCenter/master/bintrayv1.gradle'
