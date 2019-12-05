@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yashdev.libspindemo.MainActivity">
+
+    <TextView
+        android:id="@+id/spinTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.yashdev.libspin.SpinWheel
+        android:layout_below="@+id/spinTitle"
+        android:layout_marginTop="100dp"
+        app:spnwBackgroundColor="#FF9800"
+        app:spnwTopTextColor="#263238"
+        app:spnwCenterImage="@drawable/ic_center_image_2"
+        android:layout_centerHorizontal="true"
+        app:spnwCursor="@drawable/ic_cursor"
+        android:id="@+id/spinWheel"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+
+    <Button
+        android:id="@+id/spinButton"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="SPIN"
+        android:textStyle="bold"
+        android:background="#0F4671"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
